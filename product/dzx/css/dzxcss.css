@@ -1,0 +1,59 @@
+.xie2{ display:none}
+.xie{
+z-index:99999;
+width:178px;
+height:100px;
+float:left;
+position:absolute; left:50%; 
+animation:myfirst 5s linear 2s infinite alternate;
+/* Firefox: */
+-moz-animation:myfirst 5s linear 2s infinite alternate; /* Firefox */
+/* Safari and Chrome: */
+-webkit-animation:myfirst 5s linear 2s infinite alternate;
+/* Opera: */
+-o-animation:myfirst 5s linear 2s infinite alternate;
+}
+
+@keyframes myfirst
+{
+0%   {margin-left:610px;top:200px;transform:rotate(0deg);}
+3%   {transform:rotate(30deg);}
+25%  {margin-left:305px;  top:0px;transform:rotate(30deg);}
+28%  {transform:rotate(-30deg);}
+75%  {margin-left:-350px; top:400px;transform:rotate(-30deg);}
+78%  {transform:rotate(90deg);}
+100% {margin-left:-350px;top:0px;transform:rotate(90deg);}
+}
+
+@-moz-keyframes myfirst  /*firefox */
+{
+0%   {margin-left:610px; top:200px;-moz-transform:rotate(0deg);}
+3%   {-moz-transform:rotate(30deg);}
+25%  { margin-left:305px;  top:0px; -moz-transform:rotate(30deg);}
+28%  {-moz-transform:rotate(-30deg);}
+75%  {margin-left:-350px; top:400px; -moz-transform:rotate(-30deg);}
+78%  {-moz-transform:rotate(90deg);}
+100% {margin-left:-350px;top:0px; -moz-transform:rotate(90deg);}
+}
+
+@-webkit-keyframes myfirst  /* Safari and Chrome */
+{
+0%   {margin-left:610px; top:200px;-webkit-transform:rotate(0deg);}
+3%   {-webkit-transform:rotate(30deg);}
+25%  { margin-left:305px;  top:0px; -webkit-transform:rotate(30deg);}
+28%  {-webkit-transform:rotate(-30deg);}
+75%  {margin-left:-350px; top:400px; -webkit-transform:rotate(-30deg);}
+78%  {-webkit-transform:rotate(90deg);}
+100% {margin-left:-350px;top:0px; -webkit-transform:rotate(90deg);}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+0%   {margin-left:610px; top:200px;-o-transform:rotate(0deg);}
+3%   {-o-transform:rotate(30deg);}
+25%  { margin-left:305px;  top:0px; -o-transform:rotate(30deg);}
+28%  {-webkit-transform:rotate(-30deg);}
+75%  {margin-left:-350px; top:400px; -o-transform:rotate(-30deg);}
+78%  {-o-transform:rotate(90deg);}
+100% {margin-left:-350px;top:0px; -o-transform:rotate(90deg);}
+}
