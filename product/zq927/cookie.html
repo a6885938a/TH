@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>手写html</title>
+
+<!-- 引入外部js -->
+      <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script><!--引用JQuery-->
+<script src="http://www.rmthsc.com/special/js/jquery.cookie.js"></script><!--引用JQuery cookie插件-->
+<!-- 写javascript -->
+<script type="text/javascript">
+//页面加载时调用此函数
+$(function(){
+	$("#a").click(function(){
+		$("#b").css("display","none");//点击隐藏
+		$.cookie("div_display","none",{expires:1});//设置cookie
+	});
+
+		 
+	if($.cookie("div_display")){  //如果cookie存在
+	$("#b").css("display",$.cookie("div_display")); //设置div的样式为cookie的值
+	}
+});
+
+</script>
+
+<!-- 写css样式 -->
+<style type="text/css">
+#b{
+background-color:red;
+width:100px;
+height:50px;
+}
+</style>
+</head>	
+<body>
+请放在服务器中测试这个页面，直接打开 无法生成cookie.
+JQuery1.7.js和cookie.js，请百度下载，或者留个邮箱 我发给你。
+已在tomcat7.0服务器中测试成功
+<div id="b">
+<input type="button" id="a" value="点击"/>
+</div>
+</body>
+</html>

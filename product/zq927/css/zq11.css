@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:url(tm_bg.jpg) no-repeat; background-color:#cb1f1d}
+.maxmenuww{background: #c9033b;}
+.maxMenu{background:none;}
+.maxClassMenu{background-color: #b2002e;border-color: #b2002e;}
+.maxMenu li a:hover, .maxMenu li.maxHover a,#maxDropbox .maxTitle{background-color: #b2002e;}
+.maxSearchbox .btn_search{background: #c9033b;}
+.maxSearchbox .maxSearch{border-color: #c9033b;}
+body{background: #fff;}
+.maxwIn{background:none;}
+.maxgflashw{margin-bottom: 10px;}
+.goods-shopmax-list{ width:100%;}
+
+/**/
+.maxwIn{  width:100%; margin-top:-11px;}
+.maxwIn .max-gbody{background-image:url(http://www.rmthsc.com/special/zq9-27/images/bg.jpg);background-repeat: repeat-y;background-position: center top;
+}
+.max-gbody dd.goods-shopmax-list-body{ background-color:#000; }
+.maxwIn .max-gbody .roll-0,.maxwIn .max-gbody .roll-1,.maxwIn .max-gbody .roll-2,.maxwIn .max-gbody .roll-3,.maxwIn .max-gbody .roll-4,.maxwIn .max-gbody .roll-5,.maxwIn .max-gbody .roll-6{ margin: 0 auto; width:985px; height: 64px;}
+.maxwIn .max-gbody .roll-0{background: url(http://www.rmthsc.com/special/zq9-27/images/bgroup.png) center 1px no-repeat; }
+.maxwIn .max-gbody .roll-1{background: url(http://www.rmthsc.com/special/zq9-27/images/bgroup.png) center -195px no-repeat;}
+.maxwIn .max-gbody .roll-2{background: url(http://www.rmthsc.com/special/zq9-27/images/bgroup.png) center -261px no-repeat;  }
+.maxwIn .max-gbody .roll-3{background: url(http://www.rmthsc.com/special/zq9-27/images/bgroup.png) center -326px no-repeat; }
+.maxwIn .max-gbody .roll-4{background: url(http://www.rmthsc.com/special/zq9-27/images/bgroup.png) center -393px  no-repeat; }
+.maxwIn .max-gbody .roll-5{background: url(http://www.rmthsc.com/special/zq9-27/images/bgroup.png) center -458px no-repeat; }
+.maxwIn .max-gbody .roll-6{background: url(http://www.rmthsc.com/special/zq9-27/images/bgroup.png) center -590px no-repeat;  }
+
+.max-gbody .goods-shopmax-list-body { float:none}
+#goods_shopmax_list_sell #c-q1{ }
+#goods_shopmax_list_1480 dd.goods-shopmax-list-body .maxContent{background:#FF7A4B}
+#goods_shopmax_list_1481 dd.goods-shopmax-list-body .maxContent{background:#27B9AB}/*1*/
+#goods_shopmax_list_1482 dd.goods-shopmax-list-body .maxContent{background:#FC589D}/*2*/
+#goods_shopmax_list_1483 dd.goods-shopmax-list-body .maxContent{background:#5791FF}/*3*/
+#goods_shopmax_list_1484 dd.goods-shopmax-list-body .maxContent{background:#27B9AB}/*4*/
+#goods_shopmax_list_1485 dd.goods-shopmax-list-body .maxContent{background:#FC589D}/*5*/
+#goods_shopmax_list_1486 dd.goods-shopmax-list-body .maxContent{background:#FD9003}/*6*/
+.goods-shopmax-list{ padding:0; }
+.goods-ad-pic a{ float:left; padding:0; margin:0 auto; background:#00F; height:0;}
+.goods-ad-pic .ad-pic{ float:left; background-color:#000; height:auto; padding:0; margin:0 auto;}
+.max-gbody dd.goods-shopmax-list-body{width:100%; margin:0 auto; background:none; }
+.max-gbody dd.goods-shopmax-list-body .maxContent{width:969px; margin:0 auto; padding:8px; margin-top:-2px; margin-bottom:30px;}
+#goods_shopmax_list_sell .item{ width:240px; height:326px; float:left; margin-bottom:6px; margin-right:2px; overflow:hidden; display:inline; background-color:#fff; text-align:center;display: table-cell;font-size:0; border:0; padding:0}
+#goods_shopmax_list_sell p{}
+#goods_shopmax_list_sell .item span{color:#b40000;}
+.max-gbody .goods-shopmax-list-body .p {width:240px; height:180px; overflow:hidden;}
+#goods_shopmax_list_sell .item:hover { transition:all .3s linear; -webkit-transition:all .3s linear; -o-transition:all .3s linear; -moz-transition:all .3s linear; box-shadow:#ffff99 0 0 8px;transform: translateY(-5px);-webkit-transform: translateY(-5px);z-index: 8;box-shadow:2px 2px 18px 3px  #690d0c;}
+.item {transition: all 0.3s linear;-webkit-transition: all 0.3s linear;}
+#goods_shopmax_list_sell .p a{height:180px;width: 230px;display:table-cell;}
+#goods_shopmax_list_sell .p img{ margin:0 auto;  vertical-align:middle;border:0 none;height: expression(this.width > 230 ? this.height = this.height * 180 / this.width : "auto");width: expression(this.width > 230 ? "180px" : "auto");max-width:230px;height:180px;}
+#goods_shopmax_list_sell .item img {transition: opacity 0.35s, transform 0.35s;-webkit-transition: opacity 0.35s,-webkit-transform 0.35s;
+-moz-transition: opacity 0.35s,-moz-transform 0.35s;transform: scale3d(1.05,1.05,1);-webkit-transform: scale3d(1.05,1.05,1);		-moz-transform: scale3d(1.05,1.05,1.05);}
+/*精品*/
+ #goods_shopmax_list_sell #goods_shopmax_list_1480 .item{ width:440px; height:200px;  overflow:hidden; float:left; padding:20px;}
+ #goods_shopmax_list_sell #goods_shopmax_list_1480 .item{margin-top: -1px;min-height: 210px;}
+  #goods_shopmax_list_sell #goods_shopmax_list_1480 .p {width:200px; height:200px; overflow:hidden; float:left;}
+ #goods_shopmax_list_sell #goods_shopmax_list_1480 .p img{ float:left; vertical-align:middle;border:0 none;height: expression(this.width > 200 ? this.height = this.height * 200 / this.width : "auto");width: expression(this.width > 200 ? "200px" : "auto");max-width:200px;height:200px;}
+ #goods_shopmax_list_sell #goods_shopmax_list_1480 .item .i{float:left; width:230px;}
+#goods_shopmax_list_sell #goods_shopmax_list_1480 .item .i .buy-button{float:left;}
+#goods_shopmax_list_sell #goods_shopmax_list_1480 .item ul{top:20px;}
+#goods_shopmax_list_sell #goods_shopmax_list_1480 .item h6 a{ width:235px; color:#333; font-size:14px;top:80px;}
+
+#goods_shopmax_list_sell #goods_shopmax_list_1480 .item h6{ width:230px;white-space:normal;height:38px;line-height:18px; font-size:14px; }
+#goods_shopmax_list_sell #goods_shopmax_list_1480 .item .gel-intro{top:112px;width:235px;text-align:left; padding:0 4px; height:18px; line-height:18px; overflow:hidden; position:absolute; color:#F75D57; font-size:14px; text-overflow: ellipsis; white-space: nowrap;}
+ #goods_shopmax_list_sell #goods_shopmax_list_1480 .item .buy-button a{top:160px;}
+/*精品*/
+.zq .onput{width:100%; height:541px; overflow:hidden;position:relative }
+.zq .onput a{display:block; width:50px; height:50px; position:absolute; }
+#goods_shopmax_list_sell .item:hover img{opacity: 1;transform: scale3d(1,1,1);	-webkit-transform: scale3d(1.2,1.2,1.2);-moz-transform: scale3d(1.2,1.2,1.2);}
+#goods_shopmax_list_sell .goods-shopmax-list-body{ }
+#goods_shopmax_list_sell .item h6 a{ width:235px; color:#333; font-size:14px;}
+#goods_shopmax_list_sell .item h6 {text-align:left; padding:0 4px; height:18px;line-height:18px; overflow:hidden; position:absolute;top:60px;left:0;}
+#goods_shopmax_list_sell .item .gel-intro{width:235px;text-align:left; padding:0 4px; height:18px; line-height:18px; overflow:hidden; position:absolute;top:45px;left:0; color:#F75D57; font-size:14px; text-overflow: ellipsis; white-space: nowrap;}
+
+#goods_shopmax_list_sell .item .i{ width:240px;height:120px; position:relative;}
+#goods_shopmax_list_sell .item ul{display:inline; overflow:hidden; text-align:left; margin-top:-10px;position:absolute ;top:14px; left:0;}
+#goods_shopmax_list_sell .item ul li{ line-height:30px;  width:230px; display:block;}
+#goods_shopmax_list_sell .item ul li.gel-price label{ }
+.gel-price label,.gel-mktprice label{ display:block;float:left;}
+.gel-price,.gel-mktprice{float:left;}
+.gel-price{ color:#dc0707}
+.max-gbody .goods-shopmax-list-body .gel-price em{ font-size:30px; color:#F75D57; font-family:Verdana, Geneva, sans-serif; padding-right:0px; float:left;}
+.max-gbody .goods-shopmax-list-body .gel-mktprice del{ float:left;}
+.i ul{ float:left; padding:8px 4px 0}
+.buy-button{}
+
+.buy-button a{ position:absolute; top:90px; left:0;display: inline;width:230px;height:36px; background:#F75D57; color:#fff; font-size:18px; line-height:36px;border-radius:4px; margin-left:4px; display:inline; }
+.buy-button a:hover{background:#fa6f6a;}
+/*活动说明*/
+.txt_b{ background:url(http://www.rmthsc.com/special/zq9-27/images/rulebg.png) center top no-repeat; padding-bottom:30px; margin-top:20px; }
+.mid {width: 985px;margin: 0 auto;}
+.txt_b ul{color:#494949; font-size:14px; padding:85px 0 0 45px;}
+.txt_b ul li{line-height:22px;}
+/*悬浮滚动*/
+.toTop{display:none;left: 50%;  margin-left: 505px; position: fixed; top:110px; background:url(http://www.rmthsc.com/special/zq9-27/images/fd-n.png); width:118px; z-index:5000; height:360px; padding-top:24px;}
+.toTop a{float:left;width:118px; height:37px; margin-bottom:5px; line-height: 39px; display:block; text-align:center; font-size:14px; font-weight:bold; color:#FFF;}
+.toTop a#onheader{height:70px;}
+.toTop a:hover{ color:#FF0}
