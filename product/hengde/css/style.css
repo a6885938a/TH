@@ -1,0 +1,563 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+
+}
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+
+font-family: "Microsoft YaHei";
+	color: #3d3536;
+	background-color: white;
+}
+body, html {
+
+		font-size: 14px;
+	/* important */
+	height: 100%;
+}
+/*字体边框等初始化*/
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
+	font-weight: 500;
+}
+ol,ul {list-style:none;}
+li{list-style-type:none;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+fieldset, img {
+	border: 0;
+}
+img {
+	display: block;
+}
+a {
+	color: #b4d7a8;
+	text-decoration: none;
+}
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+	/* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: 100%;
+	min-height: 300px;
+	margin: 0 auto;
+}
+.cd-container::after {
+	/* clearfix */
+	content: '';
+	display: table;
+	clear: both;
+}
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+.cd-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 50px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	background: #000;
+	opacity: 0.8;
+}
+.cd-header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.cd-header #cd-logo {
+	float: left;
+	margin: 13px 0 0 5%;
+}
+.cd-header #cd-logo img {
+	display: block;
+}
+@media only screen and (min-width: 768px) {
+}
+.cd-main-nav {
+	float: right;
+	margin-right: 5%;
+	width: 44px;
+	height: 100%;
+	background: url("../img/cd-icon-menu.svg") no-repeat center center;
+	background-size: 44px 44px;
+	cursor: pointer;
+	line-height: 70px;
+}
+.cd-main-nav ul {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+.cd-main-nav ul.is-visible {
+	-webkit-transform: translateY(50px);
+	-moz-transform: translateY(50px);
+	-ms-transform: translateY(50px);
+	-o-transform: translateY(50px);
+	transform: translateY(50px);
+}
+.cd-main-nav a {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding-left: 5%;
+	background: #2f292a;
+	border-top: 1px solid #453c3d;
+	color: #fff;
+}
+@media only screen and (min-width: 768px) {
+}
+.cd-main-content {
+	/* you need to assign a min-height to the main content so that the children can inherit it*/
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+.cd-fixed-bg {
+	position: relative;
+	min-height: 700px;
+	background-repeat: no-repeat;
+	z-index: 1;
+	background: #fff;
+	padding:2em 0;
+}
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 90%;
+	max-width: 1170px;
+	text-align: center;
+	font-size: 30px;
+	font-size: 1.875rem;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	color: white;
+}
+.cd-fixed-bg.cd-bg-1 {
+	height: 800px;
+	background-image: url(../images/bg.jpg);
+}
+.cd-fixed-bg.cd-bg-2 {
+	background:#ececec; color:#227889
+}
+
+.cd-fixed-bg.cd-color-3 {	background-image: url(../images/bg4.jpg); background-position:140% 80%;
+}
+.cd-fixed-bg.cd-bg-4 {
+	background-image: url(../images/bg.jpg);
+}
+.cd-scrolling-bg {
+	position: relative;
+	min-height: 819px;
+	padding: 2em 0;
+	line-height: 1.6;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+.cd-scrolling-bg.cd-color-1 {
+
+}
+.cd-scrolling-bg.cd-color-2 {
+	background-color: #fff;
+	color: #333;
+}
+.cd-scrolling-bg.cd-color-3 {
+	background-color: #fff;
+	color: #3d3536;
+}
+/*bt*/
+.nav-wrap {
+	max-width: 1190px;
+	width: 100%;
+	margin: 0 auto;
+}
+.h100 {
+	height: 100%;
+}
+.navbar {
+	border: none;
+	margin-bottom: 0;
+}
+.navbar a {
+	color: #fff;
+}
+.navbar-default {
+	background: none;
+}
+.navbar .large {
+	opacity: 0.6;
+	height: 50px;
+}
+.navbar-blue {
+	position: absolute;
+	z-index: -1;
+	background: #000;
+	opacity: 0;
+	width: 100%;
+	height: 70px;
+	transition: all 0.3s ease-out 0s;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #eee;
+}
+.navbar-default .navbar-toggle:focus {
+	background-color: none;
+}
+.navbar-default .navbar-toggle {
+	border-color: #fff;
+}
+.navblue-on {
+	background-color: #000;
+	opacity: 0.8
+}
+navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+	font-weight: bold;
+	background: none;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+	color: #fff;
+	background: none;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color: #fff;
+	background-color: transparent;
+}
+.navbar-nav>li>.dropdown-menu {
+	background: none;
+	box-shadow: none;
+	border: 0;
+	margin-top: -5px;
+	height: auto;
+}
+.navbar-nav>li>.dropdown-menu li a {
+	border: 0;
+	cursor: pointer;
+}
+.navbar-nav>li>.large li {
+	background-color: #000;
+	opacity: 1;
+	box-shadow: none;
+	border: 0;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+	color: #fff;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+	color: #fff;
+	font-size: 14px;
+	font-weight: bold;
+	font: "microsoft yahei";
+	border: 0;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color: #e5e5e5
+}
+.navbar-default .navbar-nav>li.active>a {
+	background: none;
+}
+a.navbar-brand {
+	padding: 0 20px;
+	border: 0;
+	line-height: 45px;
+}
+a.navbar-brand img {
+	display: inline;
+}
+.lawer {
+	position: absolute;
+}
+.headerbg {
+	background: url(../images/header.png) no-repeat center #5fc4f8;
+	height: 30%
+}
+.tit-name {
+	text-align: left;
+	height: 28px;
+	line-height: 28px;
+	color: #666;
+	font-size: 16px;
+	font-weight: bold;
+	font: "microsoft yahei";
+}
+ @media (max-width: 320px) {
+	 .cd-fixed-bg h1, .cd-fixed-bg h2 {
+	font-size:3.3rem;
+}
+	 }
+ @media (min-width: 375px) {
+	 .cd-fixed-bg h1, .cd-fixed-bg h2 {
+	font-size: 4rem;
+}
+	 }
+ @media (min-width: 768px) {
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+	font-size: 7.8rem;
+}
+.cd-main-nav {
+	width: auto;
+	height: auto;
+	background: none;
+	cursor: auto;
+}
+.cd-main-nav ul {
+	position: static;
+	width: auto;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+}
+.cd-main-nav ul.is-visible {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
+}
+.cd-main-nav li {
+	display: inline-block;
+	margin-left: 1em;
+}
+.cd-main-nav a {
+	display: inline-block;
+	height: auto;
+	line-height: normal;
+	background: transparent;
+	padding: .6em 1em;
+	border-top: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+.no-touch .cd-main-nav a:hover {
+	color: #99a478;
+}
+.cd-header {
+	height: 70px;
+}
+.cd-header #cd-logo {
+	margin: 5px 0 0 5%;
+}
+.cd-scrolling-bg {
+	padding: 8em 0;
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 2;
+	font-weight: 300;
+}
+.navbar-nav {
+	float: right;
+}
+}
+ @media (min-width: 1170px) {
+.cd-fixed-bg {
+	background-attachment: fixed;
+}
+.cd-fixed-bg h1, .cd-fixed-bg h2 {
+	font-size:8.571rem;
+}
+}
+.call-out-rythm {
+	font-size:4rem;
+    padding: 1em 0;
+}
+.text-center{ text-align:center;}
+
+.polymerization {
+    width: 100%;
+    height: 540px;
+    letter-spacing: .5px;
+}
+.polymerization .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.polymerization .bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/banner.jpg);
+	background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% -156px;
+    -webkit-transition: all .2s ease 0s;
+    transition: all .2s ease 0s;
+}
+.polymerization .rectangle {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/filter.png);
+    background-position: center center;
+    background-size: cover;
+}
+.polymerization .content {
+    position: absolute;
+    z-index: 3;
+    top: 110px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.polymerization .container{	margin:0 auto;
+	padding:0;}
+.polymerization .content .top {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+}
+.polymerization .content .top + div {
+    font-size: 2.6rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+
+    color: white;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+ .polymerization .col-md-6 {width:50%;  white-space: nowrap; padding:0 50px;   }
+ .polymerization .content .container{ margin-top:80px;}
+@media (min-width: 991px)
+ {
+
+ .polymerization .content .container{ margin-top:100px;}
+  .polymerization .col-md-6 { padding:0 50px;  }
+}
+.container .p_text{font-size:16px;padding:0 15px 20px; text-indent:32px; line-height:28px; text-align:left;}
+.container .p_ul li{ font-size:16px; text-align:left; line-height:30px; padding-left:30px; background:url(../images/yes.jpg) no-repeat; background-size:25px 25px}
+.cd-color-1{ position:relative;}
+.cd-color-1 a{ color:#fff;}
+.cd-color-1 .icon01{ background:url(../images/rw.png) no-repeat; padding-left:24px;}
+.cd-color-1 .icon02{ background:url(../images/tel.png) no-repeat; padding-left:24px;}
+.cd-color-1 .icon03{ background:url(../images/email.png) no-repeat; padding-left:24px;}
+.cd-color-1 .icon04{ background:url(../images/map.png) no-repeat; padding-left:24px;}
+/*回到顶部*/
+#rocket-to-top div {
+	left: 0;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	width: 88px;
+	background: red;
+}
+#rocket-to-top .level-2 {
+	background: url("../images/rocket_button_up.png") no-repeat scroll -88px 0 transparent;
+	display: none;
+	height: 200px;
+	opacity: 0;
+	z-index: 1;
+}
+#rocket-to-top .level-3 {
+	background: none repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	height: 150px;
+	z-index: 2;
+}
+#rocket-to-top {
+	background: url("../images/rocket_button_up.png") no-repeat scroll 0 0 transparent;
+	cursor: default;
+	display: block;
+	height: 200px;
+	margin: -25px 0 0;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	right: 0;
+	top: 70%;
+	width: 88px;
+	z-index: 100;
+}
+
+#rocket-wrap-lit {
+	position: fixed;
+	right: 4px;
+	bottom: 10%;
+	width: 40px;
+	height: 40px;
+		z-index: 1000;
+display: block;
+	cursor: pointer;
+}
+#rocket-lit {
+	
+	background: url(../images/to-top.png) no-repeat;
+	
+	width: 40px;
+	height: 40px;
+
+}
+ @media (max-width: 768px) {
+.returntop {
+	display: none;
+}
+}
+ @media (max-width: 768px) {
+.rocket-lit{
+	display: block;
+}
+}
