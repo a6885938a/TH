@@ -108,6 +108,9 @@ padding:.2rem .6rem
 .hide {
 	display: none
 }
+.show{
+	display:block	
+	}
 .mt20 {
 margin-top:.4rem!important
 }
@@ -471,4 +474,15 @@ background-size:1.4rem 1.4rem
     width: 1rem;
     height: 1rem;
     margin: 0;
+}
+#Top {
+    position: fixed;
+    bottom: 1rem;
+    right: .6rem;
+    border-radius: 1.6rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: url(data:image/png;charset=utf-8;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAmBAMAAAA…CyOUGMyQzMnkj8KRDFnBNgBMOw4LOAk4oDIpxAfp4CDjcAxtdL76lU1wEAAAAASUVORK5CYII=) center no-repeat #5B6167;
+    background-size: .6rem .76rem;
+    z-index: 50;
 }

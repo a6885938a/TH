@@ -17,8 +17,8 @@
 <link rel="stylesheet" type="text/css" href="css/th-main.css">
 </head>
 <body >
-
-  <div class="sn-nav index-nav wbox sticky"  > <a class="class" name=""></a>
+<header>
+  <div class="sn-nav index-nav wbox sticky fixed"> <a class="class" name=""></a>
     <div class="wbox-flex search-bar pr"> <a name="" style="display:none;" class="search" href="#"></a>
       <form action="https://fx.rmthsc.com/mobile.php"  method="get">
         <input id="searchInput"  type="text" name="keyword" placeholder="请输入关键字" autocomplete="off" style=" background:#fff;">
@@ -35,20 +35,16 @@
     </div>
     </a>
      </div>
-
+</header>
 <div class="wrap"> 
   <!-- Swiper -->
   <div class="v5-banner swipe w" >
     <div class="swiper-container">
       <div class="swiper-wrapper">
-  <div class="swiper-slide">
-  <a href="https://fx.rmthsc.com/mobile.php?act=module&id=102024&name=bj_qmxk&do=detail&weid=2"><img src="images/b3.jpg"></a></div>
-  <div class="swiper-slide">
-  <a href="https://fx.rmthsc.com/mobile.php?act=module&ccate=204&name=bj_qmxk&do=list2&weid=2"><img src="images/b1.jpg"></a>
+  <div class="swiper-slide-1">
+  <a href="https://fx.rmthsc.com/mobile.php?act=module&id=102024&name=bj_qmxk&do=detail&weid=2"><img src="images/b3.jpg"></a>
   </div>
-        <div class="swiper-slide">
-        <a href="https://fx.rmthsc.com/mobile.php?act=module&name=bj_qmxk&weid=2&keyword=%E7%8C%B4%E5%B0%8F%E5%AE%9D&sort=1&do=list2"><img src="images/b2.jpg"></a>
-        </div>
+
       </div>
       
       <!-- Add Pagination -->
@@ -114,11 +110,21 @@
     <!--家用电器-->
     <div class="floor">
       <div class="fl-space"></div>
-    
-      <div class="fl-title" style="background-image: url(images/jd.png);"><span></span> </div>
- 
+      <div class="fl-title" style="background-image: url(images/jd.png);"><span></span> </div> 
       <div class="fl-gap"></div>
+      <div class="swiper-container">
+      <div class="swiper-wrapper">
+  <div class="swiper-slide">
       <a href="https://fx.rmthsc.com/mobile.php?act=module&id=102000&name=bj_qmxk&do=detail&weid=2"><img src="images/djj.jpg"></a>
+  </div>
+  <div class="swiper-slide">
+  <a href="https://fx.rmthsc.com/mobile.php?act=module&ccate=204&name=bj_qmxk&do=list2&weid=2"><img src="images/b1.jpg"></a>
+  </div>
+      </div>
+      
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
       <div class="fl-gap"></div>
       <div class="fl-4big hor-view"> 
       <a  href="https://fx.rmthsc.com/mobile.php?act=module&name=bj_qmxk&weid=2&keyword=%E9%80%9A%E6%83%A0%E8%B4%AD%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%E6%9C%BA&sort=1&do=list2"><img class="opa1" src="images/jd_01.jpg">
@@ -162,6 +168,7 @@
 <!--footer--> 
 <!-- Swiper JS --> 
 <script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script> 
+<script src="js/th-main.js"></script> 
 <script src="js/swiper.min.js"></script> 
 
 <!-- Initialize Swiper --> 
