@@ -4154,10 +4154,14 @@ snow();this.clear=function(){$(element).children('.snowfall-flakes').remove();fl
 			jq('#redball').click(function(){
 jq(".dialog").addClass("dialog_open");
 jq(".dialog").css("display","block");
+jq("html").css("overflow","hidden");
+jq("body").css("border-right",'16px solid transparent');
 });
           		jq('.dialog_overlay').click(function(){
 							jq(".dialog").css("display","none");
 			 jq(".dialog").removeClass("dialog_open");
+       jq("html").css("overflow","auto");
+       jq("body").css("border",'none');
 			
 });		
 		jq('.action').click(function(){
