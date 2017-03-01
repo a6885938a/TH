@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+       <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+       <script src="http://www.rmthsc.com/special/js/jquery.cookie.js"></script><!--引用JQuery cookie插件-->
+<!-- 写javascript -->
+
+
+<!-- 写css样式 -->
+
+        <script type="text/javascript">
+        $(document).ready(function() {
+			$("#close").click(function(){
+    $(".onput").hide();
+		$.cookie("swf_display","none",{expires:1});//设置cooki
+	});
+	if($.cookie("swf_display")){  //如果cookie存在
+	$("#swf-f").css("display",$.cookie("swf_display")); //设置div的样式为cookie的值
+	} 
+
+
+     });
+	 
+		/* setTimeout('$(".onput").hide("slow")',6500);	
+         setTimeout('$(".duilian").show("slow")',7000);*/
+	
+ 	/*	
+		$("#close").focus(function(){
+		$("#swf-f").hide();//点击隐藏
+		$.cookie("swf_display","none",{expires:1});//设置cookie
+	});
+	if($.cookie("swf_display")){  //如果cookie存在
+	$("#swf-f").css("display",$.cookie("swf_display")); //设置div的样式为cookie的值
+	} 
+*/ 
+
+
+	
+		 /*
+		       $('.onput').delay(1000).hide(0);
+		  $('.duilian').delay(1000).show(0);
+		  
+		  */
+	
+     
+    </script>
+</head>
+
+<body style="background:url(http://www.rmthsc.com/special/zq9-27/images/bg.jpg); margin:0 auto;">
+
+
+<div id="mto">
+<div class="onput" id="swf-f">
+<div id="close" style=" position:fixed;left:50%;margin-left:554px; bottom:490px; z-index:999;display:block; width:35px; height:35px; background:url(http://www.rmthsc.com/special/zq9-27/images/close.png); font-size:20px; text-align:center; line-height:50px; cursor:pointer;">
+     </div>
+<a id="put"  style=" position:fixed;left:50%;margin-left:-960px; bottom:0; z-index:998;display:block; width:1920px; height:541px; "  target="_blank" href="http://www.rmthsc.com/index.php/gallery-580.html">
+     </a>
+     
+ <div style=" position:fixed;left:50%;margin-left:-960px; bottom:0">
+   <embed type="application/x-shockwave-flash" classid="clsid:d27cdb6e-ae6d-11cf-96b8-4445535400000" src="http://www.rmthsc.com/special/zq9-27/images/ad.swf" wmode="transparent" quality="high" menu="false" play="true" loop="true" allowfullscreen="true" width="1920" height="541" allowscriptaccess="always" clstag="sale|keycount|20140901AB|1" />
+     </div>
+  </div>
+  <!--对联start-->
+<div class="duilian" style="position:fixed; z-index:9999; display:none;">
+<script>
+	var sydl=0;
+	var coupletTop = 100;
+	var rdmdl=Math.floor(Math.random()*2)+1;
+if(rdmdl==1)
+{
+	var coupletLeftUrl = 'http://www.rmthsc.com/special/zq9-27/images/5.swf';
+	var coupletRightUrl = 'http://www.rmthsc.com/special/zq9-27/images/5.swf';
+	var coupletLeftUrlb = 'http://www.rmthsc.com/special/zq9-27/images/5.swf';
+	var coupletRightUrlb = 'http://www.rmthsc.com/special/zq9-27/images/5.swf';
+
+	var sydl=1;
+
+}
+
+if(rdmdl==2)
+{
+	var coupletLeftUrl = 'http://www.rmthsc.com/special/zq9-27/images/5.swf';
+	var coupletRightUrl = 'http://www.rmthsc.com/special/zq9-27/images/5.swf';
+	var coupletLeftUrlb = 'http://www.rmthsc.com/special/zq9-27/images/5.swf';
+	var coupletRightUrlb = 'http://www.rmthsc.com/special/zq9-27/images/5.swf';
+	var sydl=1;
+}
+
+
+if(sydl==1)
+{
+document.write('<scr'+'ipt type="text/javascript" src="http://www.rmthsc.com/special/zq9-27/js/duilian_2011n.js"></scr'+'ipt>');
+}
+</script>
+</div>
+  <!--对联end-->
+</div>
+
+<div class="" style="width:1024px; height:1500px; float:left;">
+
+
+
+
+</div>
+</body>
+</html>
+
+
